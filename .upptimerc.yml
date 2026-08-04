@@ -1,9 +1,2 @@
-owner: wss542
-repo: mac-monitor
-token: ${{ secrets.GITHUB_TOKEN }}
-sites:
-  - name: Mac VM 主页
-    url: https://qwq.tail6e5b10.ts.net
-assignees:
-  - wss542
-statusWebsites: []
+# This repo has been moved to mac-uptime
+# See https://github.com/wss542/mac-uptime
