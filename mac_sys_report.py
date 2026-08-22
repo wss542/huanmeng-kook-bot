@@ -197,13 +197,23 @@ def ensure_phone_endpoint(url: str) -> str:
     return url
 
 
-def post(url: str, key: str, payload: dict) -> str:
+def post(url: str, key: str, payload: dict, retries: int = 2, delay: int = 8) -> str:
+    """POST 上报，遇临时错误（503/连接关闭/超时）重试，避免免费隧道偶发故障丢数据。"""
     sep = "?" if "?" not in url else "&"
     full = f"{url}{sep}key={urllib.parse.quote(key)}"
     data = json.dumps(payload).encode("utf-8")
-    req = urllib.request.Request(full, data=data, headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=10) as resp:
-        return resp.read().decode("utf-8")
+    last_err = None
+    for attempt in range(retries + 1):
+        try:
+            req = urllib.request.Request(full, data=data, headers={"Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                return resp.read().decode("utf-8")
+        except Exception as e:
+            last_err = e
+            if attempt < retries:
+                print(f"  ↻ 上报失败（{e}），{delay}s 后重试（{attempt + 1}/{retries}）")
+                time.sleep(delay)
+    raise last_err
 
 
 def main():
