@@ -136,7 +136,7 @@ def get_front_app() -> str:
 def _fetch_from_github_api() -> str:
     """通过 GitHub API 读文件内容（无 CDN 缓存，最快最准）。需要 GITHUB_PAT。"""
     import base64, json
-    api = "https://api.github.com/repos/Trusler258/huanmeng-kook-bot/contents/phone_tunnel_url.txt"
+    api = "https://api.github.com/repos/wss542/huanmeng-kook-bot/contents/phone_tunnel_url.txt"
     req = urllib.request.Request(
         api,
         headers={
