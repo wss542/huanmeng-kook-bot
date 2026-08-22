@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from __future__ import annotations
 """
 mac_sys_report.py — 把 Mac 状态上报给「幻梦 Bot」的 /sys
 
