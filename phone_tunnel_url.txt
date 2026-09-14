@@ -1,1 +1,1 @@
-https://relaxation-granted-communicate-fusion.trycloudflare.com
+https://api.trycloudflare.com
