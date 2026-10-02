@@ -1,1 +1,1 @@
-https://africa-virtually-indie-document.trycloudflare.com
+https://api.trycloudflare.com
