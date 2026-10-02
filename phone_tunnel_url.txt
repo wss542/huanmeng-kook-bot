@@ -1,1 +1,1 @@
-https://jurisdiction-somewhere-mod-ware.trycloudflare.com
+https://api.trycloudflare.com
