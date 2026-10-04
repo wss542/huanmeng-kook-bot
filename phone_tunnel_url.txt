@@ -1,1 +1,1 @@
-https://topic-congratulations-creating-runs.trycloudflare.com
+https://api.trycloudflare.com
