@@ -1,1 +1,1 @@
-https://motel-allocated-connecticut-irc.trycloudflare.com
+https://api.trycloudflare.com
