@@ -1,1 +1,1 @@
-https://congress-soft-unlock-stakeholders.trycloudflare.com
+https://api.trycloudflare.com
