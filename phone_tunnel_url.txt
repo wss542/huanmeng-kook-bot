@@ -1,1 +1,1 @@
-https://api.trycloudflare.com
+https://rim-guns-exactly-script.trycloudflare.com
