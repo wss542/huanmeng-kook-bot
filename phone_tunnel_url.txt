@@ -1,1 +1,1 @@
-https://laptops-tests-brothers-champions.trycloudflare.com
+https://api.trycloudflare.com
