@@ -1,1 +1,1 @@
-https://ace-morris-saves-hostels.trycloudflare.com
+https://api.trycloudflare.com
